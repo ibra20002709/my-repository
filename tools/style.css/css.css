@@ -1,0 +1,137 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 90%;
+  margin:  0 auto;
+}
+/* Starting code here */
+.wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 
+  "header header"
+  "aside main"
+  "footer footer"
+  ;
+  grid-column-gap: 0.8em;
+  font-family: "Roboto", serif;
+}
+
+.all-item-seletion *{
+  margin: 1px;
+  padding: 0;
+}
+/* Header code starting here */
+header {
+  grid-area: header;
+  height: 100px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a{
+  margin: 0 1em;
+  color: black;
+  text-decoration: none;
+}
+
+header a i {
+  margin: 0 5px;
+}
+
+.input-search-bar {
+  background-color: hsla(0, 24%, 94%, 0.379);
+  border-radius: 50px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+
+#login-btn{
+  background: green;
+  border-radius: 50px;
+  width: 200px;
+  height: 100px;
+  padding: 3px 20px;
+  color:white;
+}
+
+.search-btn {
+  background: white;
+  }
+
+#fa-solid {
+  margin: 0 20px;
+}
+
+/* Header code snding here */
+
+/* Aside code starting here */
+aside {
+  grid-area: aside;
+  border-right: 1px solid hsl(0, 2%, 8%);
+  width:200px;
+  background: white;
+  
+  height: 100vh;
+}
+
+.navigation-links {
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+
+}
+
+.navigation-links h4{
+  align-self:center;
+}
+
+nav {
+  width: 100%;
+  
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul a {
+  color: black;
+  text-decoration: none;
+  
+
+}
+
+nav ul a li i {
+  margin-right: 5px;
+}
+/* Aside code ending here */
+
+/* main  code starting here */
+main {
+  grid-area: main;
+  height: 100vh;
+  
+}
+
+main h1 {
+  text-align: center;
+}
+/* main code ending here */
+
+/* footer code starting here */
+footer {
+  grid-area: footer;
+  background-color: black;
+  height: 100px;
+}
+/* footer code ending here */
